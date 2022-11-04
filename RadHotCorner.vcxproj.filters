@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="RadHotCorner.cpp" />
+    <ClCompile Include="Window.cpp" />
+    <ClCompile Include="WinMain.cpp" />
+    <ClCompile Include="Format.cpp" />
+    <ClCompile Include="Logging.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Window.h" />
+    <ClInclude Include="Windowxx.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="memory_utils.h" />
+    <ClInclude Include="Format.h" />
+    <ClInclude Include="reg_utils.h" />
+    <ClInclude Include="Logging.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Res">
+      <UniqueIdentifier>{762e681e-8616-4c0f-8977-d27de40bf9e8}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\RadHotCorner.ico">
+      <Filter>Res</Filter>
+    </Image>
+    <Image Include="res\RadHotCorner-White.ico">
+      <Filter>Res</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="RadHotCorner.rc" />
+  </ItemGroup>
+</Project>
