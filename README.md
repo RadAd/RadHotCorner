@@ -1,5 +1,5 @@
 <!-- ![Icon](res/RadHotCorner.ico) RadHotCorner -->
-# <img src="res/RadHotCorner.ico" width=32/> RadHotCorner
+# <img src="res/RadHotCorner-White.ico" width=32/> RadHotCorner
 
 Launch an application when the mouse is in the corner of the monitor
 
