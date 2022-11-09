@@ -198,6 +198,12 @@ void RootWindow::OnMouseHook(UINT uMsg, MSLLHOOKSTRUCT* evt)
             !KEYDOWN(GetKeyState(VK_LBUTTON)) &&
             !KEYDOWN(GetKeyState(VK_RBUTTON)) &&
             !KEYDOWN(GetKeyState(VK_MBUTTON)) &&
+            !KEYDOWN(GetKeyState(VK_CONTROL)) &&
+            !KEYDOWN(GetKeyState(VK_SHIFT)) &&
+            !KEYDOWN(GetKeyState(VK_MENU)) &&
+            !KEYDOWN(GetKeyState(VK_LWIN)) &&
+            !KEYDOWN(GetKeyState(VK_RWIN)) &&
+            !KEYDOWN(GetKeyState(VK_APPS)) &&
             (GetCapture() == NULL))
             ? FindHotCorner(evt->pt) : nullptr;
         if (m_currentcorner != pCorner)
