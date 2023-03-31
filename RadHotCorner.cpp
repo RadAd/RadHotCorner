@@ -54,6 +54,7 @@ BOOL MonitorEnumProc(
     LPARAM lParam
 )
 {
+    //GetMonitorInfo(MONITORINFOEX);    // To get device name
     std::vector<MonitorInfo>* monitors = (std::vector<MonitorInfo>*)(void*) lParam;
     monitors->push_back({ hMonitor, *pRect });
     return TRUE;
@@ -291,7 +292,7 @@ LRESULT RootWindow::HandleMessage(const UINT uMsg, const WPARAM wParam, const LP
     static UINT s_uTaskbarRestart = RegisterWindowMessage(TEXT("TaskbarCreated"));
     if (s_uTaskbarRestart != 0 && uMsg == s_uTaskbarRestart)
     {
-        CHECK(LogLevel::ERROR, AddTrayIcon(*this));
+        CHECK(LogLevel::WARN, AddTrayIcon(*this));
         return TRUE;
     }
 
